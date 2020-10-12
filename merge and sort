@@ -1,0 +1,29 @@
+# creating list1
+list1 = []
+
+#number of element in list1
+num = int(input("Enter number of elements in list1: "))
+
+# iterating till num to append elements in list1
+for i in range(1, num + 1):
+    ele = int(input("Enter elements: "))
+    list1.append(ele)
+
+# creating list2
+list2 = []
+
+#number of element in list2
+num = int(input("Enter number of elements in list2: "))
+
+# iterating till num to append elements in list2
+for i in range(1, num + 1):
+    ele = int(input("Enter elements: "))
+    list2.append(ele)
+
+# merge function
+def Merge(list1, list2):
+    final_list = list1 + list2
+    final_list.sort()
+    return(final_list)
+ #output
+print(Merge(list1, list2))
