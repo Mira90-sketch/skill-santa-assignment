@@ -1,0 +1,16 @@
+#creating empty list
+List = []
+
+#number of elemnt in list
+Number = int(input("Please enter the Total Number of List Elements: "))
+
+# iterating till num to append elements in list
+for i in range(1, Number + 1):
+    value = int(input("Please enter the Value of %d Element : " %i))
+    List.append(value)
+    
+#sorting the list
+List.sort()
+
+# print maximum element
+print("The second Largest Element in this List is : ", List[Number - 2])
